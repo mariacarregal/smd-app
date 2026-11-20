@@ -9,7 +9,8 @@ dependencies = [
 ]
 
 [project.scripts]
-ledger = "ledger.cli:main"
+ledger = "ledger.cli:main"uv run ledger balance > ~/smd/before/balance-new.txt
+
 
 [build-system]
 requires = ["uv_build>=0.12.9,<0.13.0"]
@@ -19,3 +20,6 @@ build-backend = "uv_build"
 dev = [
     "ruff>=0.17.4",
 ]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
