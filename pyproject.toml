@@ -9,7 +9,7 @@ dependencies = [
 ]
 
 [project.scripts]
-ledger = "ledger.cli:main"uv run ledger balance > ~/smd/before/balance-new.txt
+ledger = "ledger.cli:main"
 
 
 [build-system]
